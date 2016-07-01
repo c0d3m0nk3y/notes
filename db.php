@@ -1,3 +1,3 @@
 <?php
-	$db = mysqli_connect("localhost", "user", "password", "notes")
+	$db = mysqli_connect("localhost", "user", "password", "notes");
 ?>
