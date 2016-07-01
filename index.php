@@ -7,7 +7,7 @@
 		$note = $_POST['note'];
 		$tags = $_POST['tags'];
 		$sql_store = "INSERT into notes (id, title, note, tags) VALUES (NULL, '$title', '$note', '$tags')";
-		$sql = mysql_query($db, $sql_store) or die(mysql_error));
+		$sql = mysql_query($db, $sql_store) or die(mysql_error());
 		echo "Note '$title' submitted.";
 	} else {
 		echo "Enter Title and Note.";
