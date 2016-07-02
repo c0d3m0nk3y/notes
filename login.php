@@ -2,7 +2,7 @@
 
 	require 'db.php';
 
-	if(!empty($_POST['email']) && !empty($_POST['password'])) {
+	if(!empty($_POST['username']) && !empty($_POST['password'])) {
 		$records = $db->prepare('SELECT id,username,email,password FROM users WHERE username = :username');
 		$records->bindParam(':username', $_POST['username']);
 		$records->execute();
