@@ -11,6 +11,10 @@
 	<link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
 </head>
 <body>
+	<div class="header">
+		<a href="/">Notes</a>
+	</div>
+	
 	<h1>You have logged out...</h1>
 	<meta http-equiv="refresh" content="1;url=login.php" />
 </body>
