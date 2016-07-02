@@ -24,6 +24,7 @@
 			$_SESSION['username'] = $username;
 			$_SESSION['id'] = $id;
 			header("Location: index.php");
+			echo "foo";
 		} else {
 			echo "Username/Password not found";
 		}
