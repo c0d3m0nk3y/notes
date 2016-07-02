@@ -60,6 +60,7 @@
 			} else {
 				echo "No resutls"
 			}
+		?>
 	</table>
 	<br />
 
