@@ -12,7 +12,7 @@
 			die('no results');
 		}
 		
-		if(!password_verify($_POST['password'], $results['password'], PASSWORD_DEFAULT)) {
+		if(!password_verify($_POST['password'], $results['password'])) {
 			die('password mismatch');
 		}
 		
