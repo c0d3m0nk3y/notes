@@ -1,14 +1,5 @@
 <?php
-	$server = 'localhost';
-	$username = 'user';
-	$password = 'password';
-	$database = 'notes';
-	
-	try {
-		$conn = new PDO("mysql:host=$server;dbname=$database;", $username, $password);
-	} catch(PDOException $e) {
-		die("Connection failed: " . $e->getMessage());
-	}
+	require 'db.php';
 	
 	// TODO: Check passwords match
 
