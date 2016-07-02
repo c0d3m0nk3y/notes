@@ -44,7 +44,7 @@
 		<?php
 			$sql_list = "SELECT * FROM notes ORDER BY id ASC";
 			$results = mysqli_query($db, $sql_list) or die(mysql_error());
-			$names = "";
+			$notes = "";
 			
 			if(mysqli_num_rows($results) > 0) {
 				while($row = mysqli_fetch_assoc($results)) {
@@ -56,7 +56,7 @@
 					$notes .= "<tr><td>$id</td><td>$title</td><td>$tags</td><td>$date</td><td></td></tr>";
 				}
 				
-				echo $names;
+				echo $notes;
 			} else {
 				echo "No resutls";
 			}
