@@ -8,6 +8,14 @@
 		$records->execute();
 		$results = $records->fetch(PDO::FETCH_ASSOC);
 		
+		if(!count($results > 0) {
+			die('no results');
+		}
+		
+		if(!password_verify($_POST['password'], $results['password'])) {
+			die('password mismatch');
+		}
+		
 		if(count($results) > 0 && password_verify($_POST['password'], $results['password'])) {
 			die('logged in');
 		} else {
