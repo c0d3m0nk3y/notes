@@ -33,7 +33,7 @@
 		
 		$query_username = mysqli_query($db, $sql_fetch_username);
 		$query_email = mysqli_query($db, $sql_fetch_email);
-		
+		/*
 		if(mysqli_num_rows($query_username)) {
 			echo "Please choose another username.";
 			return;
@@ -66,7 +66,7 @@
 		
 		mysqli_query($db, $sql_store);
 		
-		header("Location: index.php");
+		header("Location: index.php");*/
 	}
 ?>
 
