@@ -40,5 +40,10 @@
 		<input placeholder="Password" name="password" type="text">
 		<input name="login" type="submit" value="Login">
 	</form>
+	<br />
+	
+	<form action="register.php">
+		<input type="submit" value="Register">
+	</form>
 </body>
 </html>
