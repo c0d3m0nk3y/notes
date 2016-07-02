@@ -33,7 +33,7 @@
 		
 		// Check the passwords match before hashing
 		if($password != $password_confirm) {
-			echo "Passwords do not match. $password $password_confirm";
+			echo "Passwords do not match.";
 			return;
 		}
 		
