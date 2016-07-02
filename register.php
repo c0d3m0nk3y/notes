@@ -1,3 +1,13 @@
+<?php
+	
+	// TODO: Check passwords match
+
+	if(!email($_POST['email'] && !empty($_POST['password']) && !empty($_POST['confirm_password'])) {
+		
+	}
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,5 +22,13 @@
 	
 	<h1>Register</h1>
 	<span>or <a href="login.php">login here</a></span>
+	
+	<form action="register.php" method="POST">
+		<input type="text" placeholder="Enter your email" name="email">
+		<input type="password" placeholder="and password" name="password">
+		<input type="password" placeholder="confirm password" name="confirm_password">
+		<input type="submit">
+	</form>
+	
 </body>
 </html>
