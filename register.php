@@ -4,7 +4,18 @@
 	// TODO: Check passwords match
 
 	if(!empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['confirm_password'])) {
+		$sql = "INSERT INTO users (username, password, email) VALUES (:username, :password, :email)";
+		$stmt = $db->prepare($sql);
 		
+		$stmt->bindParam(':username', $_POST['username']);
+		$stmt->bindParam(':password', password_hash($_POST['email'], PASSWORD_DEFAULT));
+		$stmt->bindParam(':email', $_POST['email']);
+		
+		if($stmt->execute() ) {
+			die('Success');
+		} else {
+			die('Fail');
+		}
 	}
 
 ?>
@@ -25,7 +36,8 @@
 	<span>or <a href="login.php">login here</a></span>
 	
 	<form action="register.php" method="POST">
-		<input type="text" placeholder="Enter your email" name="email">
+		<input type="text" placeholder="Enter your username" name="username">
+		<input type="text" placeholder="your email" name="email">
 		<input type="password" placeholder="and password" name="password">
 		<input type="password" placeholder="confirm password" name="confirm_password">
 		<input type="submit">
