@@ -43,7 +43,7 @@
 		
 		<?php
 			$sql_list = "SELECT * FROM names ORDER BY id ASC";
-			$results = mysqli_query`($db, $sql_list) or die(mysql_error());
+			$results = mysqli_query($db, $sql_list) or die(mysql_error());
 			$names = "";
 			
 			if(mysqli_num_rows($results) > 0) {
