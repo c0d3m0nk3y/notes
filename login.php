@@ -11,7 +11,7 @@
 		if(count($results) > 0 && password_verify($_POST['password'], $results['password'])) {
 			die('logged in');
 		} else {
-			die('login error');
+			die("login error $results");
 		}
 	}
 
