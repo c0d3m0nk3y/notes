@@ -30,7 +30,7 @@
 
 <body>
 	<div class="header">
-		<a href="/">Notes</a>
+		<a href="index.php">Notes</a>
 	</div>
 	
 	<h1>New Note</h1>

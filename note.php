@@ -19,6 +19,10 @@
 </head>
 
 <body>
+	<div class="header">
+		<a href="index.php">Notes</a>
+	</div>
+	
 	<?php
 		$sql_search = "SELECT * FROM notes WHERE id=$id LIMIT 1";
 		$results = mysqli_query($db, $sql_search) or die(mysql_error());
