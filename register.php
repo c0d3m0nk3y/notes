@@ -31,14 +31,14 @@
 			return;
 		}
 		
-		if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-			echo "Please enter a valid email.";
-			return;
-		}
-		
 		// Check the passwords match before hashing
 		if($password != $password_confirm) {
 			echo "Passwords do not match. $password $password_confirm";
+			return;
+		}
+		
+		if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+			echo "Please enter a valid email.";
 			return;
 		}
 		
