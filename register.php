@@ -12,7 +12,7 @@
 	
 	// TODO: Check passwords match
 
-	if(!email($_POST['email'] && !empty($_POST['password']) && !empty($_POST['confirm_password'])) {
+	if(!empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['confirm_password'])) {
 		
 	}
 
