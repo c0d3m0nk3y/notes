@@ -1,5 +1,11 @@
 <?php
 	session_start();
+	
+	// redirect if not logged in
+	if(!isset($SESSION['id'])) {
+		header("Location: login.php");
+	}
+	
 	include_once("db.php");
 	
 	if(isset($_POST['title']) && isset($_POST['note']) && $_POST['title'] != "" && $_POST['note'] != "") {
