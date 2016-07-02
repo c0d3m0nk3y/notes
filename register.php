@@ -22,8 +22,8 @@
 		$email = mysqli_real_escape_string($db, $email);
 		
 		// Check the passwords match before hashing
-		if($password == "" || $password_confirm == "") {
-			echo "Please enter a password.";
+		if($password != $password_confirm) {
+			echo "Passwords do not match. $password $password_confirm";
 			return;
 		}
 		
@@ -48,10 +48,12 @@
 			return;
 		}
 		
-		if($password != $password_confirm) {
-			echo "Passwords do not match. $password $password_confirm";
+		if($password == "" || $password_confirm == "") {
+			echo "Please enter a password.";
 			return;
 		}
+		
+		
 		
 		if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 			echo "Please enter a valid email.";
