@@ -53,7 +53,7 @@
 					$tags = $row['tags'];
 					$date = $row['date'];
 					
-					$notes .= "<tr><td>$id</td><td>$title</td><td>$tags</td><td>$date</td><td></td></tr>";
+					$notes .= "<tr><td>$id</td><td>$title</td><td>$tags</td><td>$date</td><td><a href='name.php?id=$id'>Open</a></td></tr>";
 				}
 				
 				echo $notes;
