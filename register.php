@@ -21,28 +21,6 @@
 		$password_confirm = mysqli_real_escape_string($db, $password_confirm);
 		$email = mysqli_real_escape_string($db, $email);
 		
-		// Check the passwords match before hashing
-		if($password != $password_confirm) {
-			echo "Passwords do not match. $password $password_confirm";
-			return;
-		}
-		
-		// Hash the password
-		$password = password_hash($password, PASSWORD_DEFAULT);
-		$password_confirm = password_hash($password_confirm, PASSWORD_DEFAULT);
-		
-		$sql_store = "INSERT into users (username, password, email) VALUES ('$username', '$password', '$email')";
-		$sql_fetch_username = "SELECT username FROM users WHERE username = '$username'";
-		$sql_fetch_email = "SELECT email FROM users WHERE email = '$email'";
-		
-		$query_username = mysqli_query($db, $sql_fetch_username);
-		$query_email = mysqli_query($db, $sql_fetch_email);
-		
-		if(mysqli_num_rows($query_username)) {
-			echo "Please choose another username.";
-			return;
-		}
-		
 		if($username == "") {
 			echo "Please enter a username.";
 			return;
@@ -53,17 +31,37 @@
 			return;
 		}
 		
-		
-		
 		if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 			echo "Please enter a valid email.";
 			return;
 		}
 		
+		// Check the passwords match before hashing
+		if($password != $password_confirm) {
+			echo "Passwords do not match. $password $password_confirm";
+			return;
+		}
+		
+		// Hash the password
+		$password = password_hash($password, PASSWORD_DEFAULT);
+		$password_confirm = password_hash($password_confirm, PASSWORD_DEFAULT);
+		
+		$sql_fetch_username = "SELECT username FROM users WHERE username = '$username'";
+		$sql_fetch_email = "SELECT email FROM users WHERE email = '$email'";
+		
+		$query_username = mysqli_query($db, $sql_fetch_username);
+		$query_email = mysqli_query($db, $sql_fetch_email);
+		
+		if(mysqli_num_rows($query_username)) {
+			echo "Please choose another username.";
+			return;
+		}
 		if(mysqli_num_rows($query_email)) {
 			echo "$email already has an account.";
 			return;
 		}
+		
+		$sql_store = "INSERT into users (username, password, email) VALUES ('$username', '$password', '$email')";
 		
 		mysqli_query($db, $sql_store);
 		
