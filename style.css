@@ -3,8 +3,6 @@ body {
 	padding:0px;
 	font-family: 'Titillium Web', sans-serif;
 	text-align:center;
-	color:#eee;
-	background-color:#111;
 }
 
 input[type="text"], input[type="password"] {
