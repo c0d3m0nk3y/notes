@@ -53,12 +53,12 @@
 					$tags = $row['tags'];
 					$date = $row['date'];
 					
-					$notes .= "<tr><td>$id</td><td>$title</td><td>$tags</td><td>$date</td><td></td></tr>"
+					$notes .= "<tr><td>$id</td><td>$title</td><td>$tags</td><td>$date</td><td></td></tr>";
 				}
 				
 				echo $names;
 			} else {
-				echo "No resutls"
+				echo "No resutls";
 			}
 		?>
 	</table>
