@@ -29,7 +29,10 @@
 </head>
 
 <body>
-
+	<div class="header">
+		<a href="/">Notes</a>
+	</div>
+	
 	<h1>New Note</h1>
 	<form action="index.php" method="POST">
 		<input type="text" name="title" value="" placeholder="Note Title" />
