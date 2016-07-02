@@ -1,7 +1,7 @@
 <?php
 	session_start();
 	
-	if($_POST['login']) {
+	if(isset($_POST['login'])) {
 		include_once("db.php");
 		$username = strip_tags($_POST['username']);
 		$password = strip_tags($_POST['password']);
@@ -9,8 +9,8 @@
 		$username = stripslashes($username);
 		$password = stripslashes($password);
 		
-		$username = mysqli_real_escape_string($username);
-		$password = mysqli_real_escape_string($password);
+		$username = mysqli_real_escape_string($db, $username);
+		$password = mysqli_real_escape_string($db, $password);
 		
 		$password = md5($password);
 		
