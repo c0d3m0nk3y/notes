@@ -21,6 +21,12 @@
 		$password_confirm = mysqli_real_escape_string($db, $password_confirm);
 		$email = mysqli_real_escape_string($db, $email);
 		
+		// Check the passwords match before hashing
+		if($password == "" || $password_confirm == "") {
+			echo "Please enter a password.";
+			return;
+		}
+		
 		// Hash the password
 		$password = password_hash($password, PASSWORD_DEFAULT);
 		$password_confirm = password_hash($password_confirm, PASSWORD_DEFAULT);
@@ -39,11 +45,6 @@
 		
 		if($username == "") {
 			echo "Please enter a username.";
-			return;
-		}
-		
-		if($password == "" || $password_confirm == "") {
-			echo "Please enter a password.";
 			return;
 		}
 		
