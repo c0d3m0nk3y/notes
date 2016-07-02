@@ -21,7 +21,6 @@
 		$db_password = $row['password'];
 		
 		if($password == $db_password) {
-			echo "foo";
 			$_SESSION['username'] = $username;
 			$_SESSION['id'] = $id;
 			header("Location: index.php");
