@@ -42,7 +42,7 @@
 			return;
 		}
 		
-		if($password == "" || password_confirm == "") {
+		if($password == "" || $password_confirm == "") {
 			echo "Please enter a password.";
 			return;
 		}
