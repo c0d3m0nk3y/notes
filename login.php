@@ -8,7 +8,7 @@
 		$records->execute();
 		$results = $records->fetch(PDO::FETCH_ASSOC);
 		
-		if(!count($results > 0) {
+		if(!count($results) > 0) {
 			die('no results');
 		}
 		
