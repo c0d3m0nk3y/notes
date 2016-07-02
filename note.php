@@ -28,7 +28,7 @@
 				$tags = $row['tags'];
 				$date = $row['date'];
 				
-				echo "<h2>$title - $date</h2><h1>$note</h1><h3>tags</h3>";
+				echo "<h2>$title - $date</h2><p>$note</p><p><i>$tags</i></p>";
 			}
 		} else {
 			echo "Nothing here...";
