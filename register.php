@@ -13,7 +13,7 @@
 		$stmt->bindParam(':password', password_hash($_POST['email'], PASSWORD_DEFAULT));
 		$stmt->bindParam(':email', $_POST['email']);
 		
-		if($stmt->execute() ) {
+		if($stmt->execute()) {
 			$message = 'Welcome to Notes';
 		} else {
 			$message = 'Something went wrong. Sorry about that!';

@@ -1,7 +1,18 @@
 <?php
 
+	require 'db.php';
+
 	if(!empty($_POST['email']) && !empty($_POST['password'])) {
+		$records = $db->prepare('SELECT id,email,password FROM users WHERE username = :username');
+		$records->bindParam(':username', $_POST['username']);
+		$records->execute();
+		$results = $records->fetch(PDO::FETCH_ASSOC);
 		
+		if(count($results) > 0 && password_verify($_POST['password'], $results['password'])) {
+			die('logged in');
+		} else {
+			die('login error');
+		}
 	}
 
 ?>
@@ -22,7 +33,7 @@
 	<span>or <a href="register.php">register here</a></span>
 	
 	<form action="login.php" method="POST">
-		<input type="text" placeholder="Enter your email" name="email">
+		<input type="text" placeholder="Enter your username" name="username">
 		<input type="password" placeholder="and password" name="password">
 		<input type="submit">
 	</form>
