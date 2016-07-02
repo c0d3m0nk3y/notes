@@ -14,11 +14,11 @@
 		$email = strip_tags($_POST['email']);
 		$username = stripslashes($username);
 		$password = stripslashes($password);
-		$password_confirm = stripslashes($password_confirm;
+		$password_confirm = stripslashes($password_confirm);
 		$email = stripslashes($email);
 		$username = mysqli_real_escape_string($db, $username);
 		$password = mysqli_real_escape_string($db, $password);
-		$password_confirm = mysqli_real_escape_string($db, $password_confirm;
+		$password_confirm = mysqli_real_escape_string($db, $password_confirm);
 		$email = mysqli_real_escape_string($db, $email);
 		
 		// Hash the password
