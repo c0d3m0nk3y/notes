@@ -42,7 +42,7 @@
 		</tr>
 		
 		<?php
-			$sql_list = "SELECT * FROM names ORDER BY id ASC";
+			$sql_list = "SELECT * FROM notes ORDER BY id ASC";
 			$results = mysqli_query($db, $sql_list) or die(mysql_error());
 			$names = "";
 			
