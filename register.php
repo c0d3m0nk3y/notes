@@ -21,11 +21,9 @@
 		$password_confirm = mysqli_real_escape_string($db, $password_confirm);
 		$email = mysqli_real_escape_string($db, $email);
 		
-		echo "$password $password_confirm";
 		// Hash the password
 		$password = password_hash($password, PASSWORD_DEFAULT);
 		$password_confirm = password_hash($password_confirm, PASSWORD_DEFAULT);
-		echo "$password $password_confirm";
 		
 		$sql_store = "INSERT into users (username, password, email) VALUES ('$username', '$password', '$email')";
 		$sql_fetch_username = "SELECT username FROM users WHERE username = '$username'";
