@@ -1,7 +1,9 @@
 <?php
+	// TODO: Check passwords match
+	
 	require 'db.php';
 	
-	// TODO: Check passwords match
+	$message = '';
 
 	if(!empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['confirm_password'])) {
 		$sql = "INSERT INTO users (username, password, email) VALUES (:username, :password, :email)";
@@ -12,9 +14,9 @@
 		$stmt->bindParam(':email', $_POST['email']);
 		
 		if($stmt->execute() ) {
-			die('Success');
+			$message = 'Welcome to Notes';
 		} else {
-			die('Fail');
+			$message = 'Something went wrong. Sorry about that!';
 		}
 	}
 
@@ -31,6 +33,10 @@
 	<div class="header">
 		<a href="index.php">Notes</a>
 	</div>
+	
+	<?php if(!empty($message)): ?>
+		<p><?= $message ?></p>
+	<?php endif; ?>
 	
 	<h1>Register</h1>
 	<span>or <a href="login.php">login here</a></span>
