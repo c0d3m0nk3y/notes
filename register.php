@@ -11,5 +11,6 @@
 	</div>
 	
 	<h1>Register</h1>
+	<span>or <a href="login.php">login here</a></span>
 </body>
 </html>
