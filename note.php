@@ -18,7 +18,7 @@
 
 <body>
 	<?php
-		$sql_search = "SELECT * FROM names WHERE id=$id LIMIT 1";
+		$sql_search = "SELECT * FROM notes WHERE id=$id LIMIT 1";
 		$results = mysqli_query($db, $sql_search) or die(mysql_error());
 		
 		if(mysqli_num_rows($results) > 0) {
