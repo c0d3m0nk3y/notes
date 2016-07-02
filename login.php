@@ -12,16 +12,12 @@
 		$username = mysqli_real_escape_string($db, $username);
 		$password = mysqli_real_escape_string($db, $password);
 		
-		//$password = md5($password);
-		//$password = password_hash($password, PASSWORD_DEFAULT);
-		
 		$sql = "SELECT * FROM users WHERE username='$username' LIMIT 1";
 		$query = mysqli_query($db, $sql);
 		$row = mysqli_fetch_array($query);
 		$id = $row['id'];
 		$db_password = $row['password'];
 		
-		// if($password == $db_password) {
 		if(password_verify($password, $db_password)) {
 			$_SESSION['username'] = $username;
 			$_SESSION['id'] = $id;
