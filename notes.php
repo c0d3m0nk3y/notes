@@ -39,38 +39,36 @@
 	-
 	<a href="logout.php">Logout</a>
 
-	<table border='1'>
-		<tr>
-			<th>ID</th>
-			<th>Title</th>
-			<th>Tags</th>
-			<th>Date</th>
-		</tr>
-		
-		<?php
-			$sql_list = "SELECT * FROM notes ORDER BY id ASC";
-			$results = mysqli_query($db, $sql_list) or die(mysql_error());
-			$notes = "";
+	<br /><br />
+
+	<div style="overflow-x:auto;">
+		<table id="notes">
+			<tr>
+				<th>Title</th>
+				<th>Tags</th>
+				<th>Date</th>
+			</tr>
 			
-			if(mysqli_num_rows($results) > 0) {
-				while($row = mysqli_fetch_assoc($results)) {
-					$id = $row['id'];
-					$title = $row['title'];
-					$tags = $row['tags'];
-					$date = $row['date'];
-					
-					$notes .= "<tr><td>$id</td><td>$title</td><td>$tags</td><td>$date</td><td><a href='note.php?id=$id'>Open</a></td></tr>";
-				}
+			<?php
+				$sql_list = "SELECT * FROM notes ORDER BY id ASC";
+				$results = mysqli_query($db, $sql_list) or die(mysql_error());
+				$notes = "";
 				
-				echo $notes;
-			} else {
-				echo "No resutls";
-			}
-		?>
-	</table>
-	<br />
-	
-	
-	
+				if(mysqli_num_rows($results) > 0) {
+					while($row = mysqli_fetch_assoc($results)) {
+						$title = $row['title'];
+						$tags = $row['tags'];
+						$date = $row['date'];
+						
+						$notes .= "<tr><td style='width:130px'>$title</td><td>$tags</td><td>$date</td><td><a href='note.php?id=$id'>Open</a></td></tr>";
+					}
+					
+					echo $notes;
+				} else {
+					echo "No resutls";
+				}
+			?>
+		</table>
+	</div>
 </body>
 </html>

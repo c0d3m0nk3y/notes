@@ -50,3 +50,26 @@ input[type="submit"]:hover {
 	color:#333;
 	text-decoration:none;
 }
+
+#notes {
+    /*font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;*/
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#notes td, #notes th {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+#notes tr:nth-child(even){background-color: #f2f2f2}
+
+#notes tr:hover {background-color: hotpink;}
+
+#notes th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: hotpink;
+    color: white;
+}
