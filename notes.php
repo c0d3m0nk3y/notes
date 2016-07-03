@@ -12,13 +12,6 @@
 	$records->bindParam(':id', $_SESSION['id']);
 	$records->execute();
 	$results = $records->fetch(PDO::FETCH_ASSOC);
-
-	// TODO: legacy?
-	$username = NULL;
-
-	if(count($results) > 0) {
-		$username = $results;
-	}
 ?>
 
 <!DOCTYPE html>

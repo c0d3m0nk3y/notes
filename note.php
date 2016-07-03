@@ -41,23 +41,6 @@
 		} else {
 			$message = "Something went wrong getting this note.  Sorry about that!";
 		}
-		/*
-		$sql_search = "SELECT * FROM notes WHERE id=$id LIMIT 1";
-		$results = mysqli_query($db, $sql_search) or die(mysql_error());
-		
-		if(mysqli_num_rows($results) > 0) {
-			while($row = mysqli_fetch_assoc($results)) {
-				$title = $row['title'];
-				$note = $row['note'];
-				$tags = $row['tags'];
-				$date = $row['date'];
-				
-				echo "<h2>$title - $date</h2><p>$note</p><p><i>$tags</i></p>";
-			}
-		} else {
-			echo "Nothing here...";
-		}
-		*/
 	?>
 
 </body>
