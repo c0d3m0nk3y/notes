@@ -6,18 +6,24 @@
 		header("Location: index.php");
 	}
 
-	include_once("db.php");
+	require 'db.php';
 	
 	$message = '';
 
 	if(isset($_POST['title']) && isset($_POST['note']) && $_POST['title'] != "" && $_POST['note'] != "") {
-		$title = $_POST['title'];
-		$note = $_POST['note'];
-		$tags = $_POST['tags'];
-		$sql_store = "INSERT into notes (id, title, note, tags) VALUES (NULL, '$title', '$note', '$tags')";
-		$sql = mysqli_query($db, $sql_store) or die(mysql_error());
-		#echo "Note '$title' submitted.";
-		header("Location: notes.php");
+		$sql = "INSERT INTO notes (title, note, tags) VALUES (:title, :note, :tags)";
+		$stmt = $db->prepare($sql);
+		
+		$stmt->bindParam(':title', $_POST['title']);
+		$stmt->bindParam(':note', $_POST['note']);
+		$stmt->bindParam(':tags', $_POST['tags']);
+		
+		if($stmt->execute()) {
+			header("Location: notes.php");
+		} else {
+			$message = 'Something went wrong entering the note. Sorry about that!';
+		}
+
 	} else {
 		$message = "Enter Title and Note.";
 	}
@@ -35,13 +41,13 @@
 	<div class="header">
 		<a href="index.php">Notes</a>
 	</div>
-	
+
 	<h1>Add A Note</h1>
-	<form action="index.php" method="POST">
+	<form action="addnote.php" method="POST">
 		<input type="text" name="title" value="" placeholder="Note Title" />
 		<input type="text" name="note" value="" placeholder="Note" />
 		<input type="text" name="tags" value="" placeholder="Tags" />
-		<input type="submit" name="submit" value="Submit" />
+		<input type="submit" /><!-- name="submit" value="Submit" /-->
 	</form>
 	<a href="index.php">Cancel</a>
 

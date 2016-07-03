@@ -36,9 +36,9 @@
 
 	<a href="addnote.php">Add A Note</a>
 	-
-	<a href="profile.php"><?php echo $results['username'] ?></a>
-	-
-	<a href="logout.php">Logout</a>
+	<!--a href="profile.php"><?php echo $results['username'] ?></a>
+	- -->
+	<a href="logout.php"><?php echo $results['username'] ?> Logout</a>
 
 	<br /><br />
 
@@ -56,6 +56,7 @@
 				$notes = "";
 				$sql = 'SELECT * FROM notes ORDER BY id ASC';
 			    foreach ($db->query($sql) as $row) {
+			    	$id = $row['id'];
 			    	$title = $row['title'];
 			    	$note = $row['note'];
 					$tags = $row['tags'];

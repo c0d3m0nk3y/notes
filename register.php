@@ -6,6 +6,7 @@
 	//		check user/email doesn't exist
 	session_start();
 
+	// redirect if logged in
 	if(isset($_SESSION['id'])) {
 		header("Location: notes.php");
 	}
