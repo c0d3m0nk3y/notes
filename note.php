@@ -24,6 +24,24 @@
 	</div>
 	
 	<?php
+		$records = $db->prepare('SELECT * FROM notes WHERE id = :id');
+		$records->bindParam(':id', $id);
+		$records->execute();
+		$results = $records->fetch(PDO::FETCH_ASSOC);
+		
+		$message = '';
+
+		if(count($results) > 0) {
+			$title = $results['title'];
+			$note = $results['note'];
+			$tags = $results['tags'];
+			$date = $results['date'];
+
+			echo "<p><b>$title - $date</b></p><p>$note</p><p><i>$tags</i></p>";
+		} else {
+			$message = "Something went wrong getting this note.  Sorry about that!";
+		}
+		/*
 		$sql_search = "SELECT * FROM notes WHERE id=$id LIMIT 1";
 		$results = mysqli_query($db, $sql_search) or die(mysql_error());
 		
@@ -39,6 +57,7 @@
 		} else {
 			echo "Nothing here...";
 		}
+		*/
 	?>
 
 </body>

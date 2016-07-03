@@ -36,8 +36,6 @@
 
 	<a href="addnote.php">Add A Note</a>
 	-
-	<!--a href="profile.php"><?php echo $results['username'] ?></a>
-	- -->
 	<a href="logout.php"><?php echo $results['username'] ?> Logout</a>
 
 	<br /><br />
