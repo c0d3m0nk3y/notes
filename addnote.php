@@ -43,5 +43,7 @@
 		<input type="text" name="tags" value="" placeholder="Tags" />
 		<input type="submit" name="submit" value="Submit" />
 	</form>
+	<a href="index.php">Cancel</a>
+
 </body>
 </html>

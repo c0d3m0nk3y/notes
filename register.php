@@ -6,6 +6,10 @@
 	//		check user/email doesn't exist
 	session_start();
 
+	if(isset($_SESSION['id'])) {
+		header("Location: notes.php");
+	}
+
 	require 'db.php';
 	
 	$message = '';
