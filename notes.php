@@ -13,6 +13,7 @@
 	$records->execute();
 	$results = $records->fetch(PDO::FETCH_ASSOC);
 
+	// TODO: legacy?
 	$username = NULL;
 
 	if(count($results) > 0) {
@@ -44,29 +45,26 @@
 	<div style="overflow-x:auto;">
 		<table id="notes">
 			<tr>
-				<th>Title</th>
-				<th>Tags</th>
-				<th>Date</th>
+				<th style='width:20%'>Title</th>
+				<th>Note</th>
+				<th style='width:10%'>Tags</th>
+				<th style='width:10%'>Date</th>
+				<th style='width:5%' />
 			</tr>
-			
+
 			<?php
-				$sql_list = "SELECT * FROM notes ORDER BY id ASC";
-				$results = mysqli_query($db, $sql_list) or die(mysql_error());
 				$notes = "";
-				
-				if(mysqli_num_rows($results) > 0) {
-					while($row = mysqli_fetch_assoc($results)) {
-						$title = $row['title'];
-						$tags = $row['tags'];
-						$date = $row['date'];
-						
-						$notes .= "<tr><td style='width:130px'>$title</td><td>$tags</td><td>$date</td><td><a href='note.php?id=$id'>Open</a></td></tr>";
-					}
-					
-					echo $notes;
-				} else {
-					echo "No resutls";
-				}
+				$sql = 'SELECT * FROM notes ORDER BY id ASC';
+			    foreach ($db->query($sql) as $row) {
+			    	$title = $row['title'];
+			    	$note = $row['note'];
+					$tags = $row['tags'];
+					$date = $row['date'];
+
+					$notes .= "<tr><td>$title</td><td>$note</td><td>$tags</td><td>$date</td><td><a href='note.php?id=$id'>Open</td></tr>";
+			    }
+
+			    echo $notes;
 			?>
 		</table>
 	</div>

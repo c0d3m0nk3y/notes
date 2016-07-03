@@ -9,7 +9,7 @@ a {
 	text-decoration:none;
 }
 
-a:link, a:active, a:hover, a:visited {
+a:link, a:active, a:visited, a:hover {
 	color:hotpink;
 }
 
@@ -65,11 +65,11 @@ input[type="submit"]:hover {
 
 #notes tr:nth-child(even){background-color: #f2f2f2}
 
-#notes tr:hover {background-color: hotpink;}
+#notes tr:hover {background-color: #FFB8F0;}
 
 #notes th {
     padding-top: 12px;
     padding-bottom: 12px;
-    background-color: hotpink;
+    background-color: #FFB8F0;
     color: white;
 }
