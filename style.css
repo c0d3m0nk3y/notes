@@ -67,7 +67,11 @@ input[type="submit"]:hover {
 
 #notes tr:nth-child(even){background-color: #f2f2f2}
 
-#notes tr:hover {background-color: #FFB8F0;}
+#notes tr:hover {
+	background-color: #FFB8F0;
+	word-break: break-all;
+	word-wrap:break-word;
+}
 
 #notes th {
     padding-top: 12px;
