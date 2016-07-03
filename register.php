@@ -1,5 +1,9 @@
 <?php
-	// TODO: Check passwords match
+	// TODO:
+	//		Check passwords match
+	//		Check valid email
+	//		Validate all required
+	//		check user/email doesn't exist
 	
 	require 'db.php';
 	
@@ -10,13 +14,13 @@
 		$stmt = $db->prepare($sql);
 		
 		$stmt->bindParam(':username', $_POST['username']);
-		$stmt->bindParam(':password', password_hash($_POST['email'], PASSWORD_DEFAULT));
+		$stmt->bindParam(':password', password_hash($_POST['password'], PASSWORD_DEFAULT));
 		$stmt->bindParam(':email', $_POST['email']);
 		
 		if($stmt->execute()) {
 			$message = 'Welcome to Notes';
 		} else {
-			$message = 'Something went wrong. Sorry about that!';
+			$message = 'Something went wrong registering. Sorry about that!';
 		}
 	}
 

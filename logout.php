@@ -1,8 +1,12 @@
 <?php
 	session_start();
+	session_unset();
 	session_destroy();
+
+	header("Location: index.php");
 ?>
 
+<!--
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,6 +20,7 @@
 	</div>
 	
 	<h1>You have logged out...</h1>
-	<meta http-equiv="refresh" content="1;url=login.php" />
+	<meta http-equiv="refresh" content="3;url=index.php" />
 </body>
 </html>
+-->

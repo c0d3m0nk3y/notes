@@ -1,5 +1,6 @@
 <?php
-
+	session_start();
+	
 	require 'db.php';
 
 	if(!empty($_POST['username']) && !empty($_POST['password'])) {
@@ -8,18 +9,13 @@
 		$records->execute();
 		$results = $records->fetch(PDO::FETCH_ASSOC);
 		
-		if(!count($results) > 0) {
-			die('no results');
-		}
-		
-		if(!password_verify($_POST['password'], $results['password'])) {
-			die('password mismatch');
-		}
-		
+		$message = '';
+
 		if(count($results) > 0 && password_verify($_POST['password'], $results['password'])) {
-			die('logged in');
+			$_SESSION['id'] = $results['id'];
+			header("Location: notes.php");
 		} else {
-			die('login error');
+			$message = "Something went wrong logging in.  Sorry about that!";
 		}
 	}
 
@@ -36,6 +32,10 @@
 	<div class="header">
 		<a href="index.php">Notes</a>
 	</div>
+
+	<?php if(!empty($message)): ?>
+		<p><?= $message ?></p>
+	<?php endif; ?>
 	
 	<h1>Login</h1>
 	<span>or <a href="register.php">register here</a></span>

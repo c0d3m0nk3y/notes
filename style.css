@@ -5,6 +5,18 @@ body {
 	text-align:center;
 }
 
+a {
+	text-decoration:none;
+}
+
+a:link {
+	color:#777;
+}
+
+a:visited {
+	color:#777;
+}
+
 input[type="text"], input[type="password"] {
 	outline:none;
 	padding:10px;
