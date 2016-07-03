@@ -4,7 +4,8 @@
 	//		Check valid email
 	//		Validate all required
 	//		check user/email doesn't exist
-	
+	start_session();
+
 	require 'db.php';
 	
 	$message = '';
@@ -18,7 +19,7 @@
 		$stmt->bindParam(':email', $_POST['email']);
 		
 		if($stmt->execute()) {
-			$message = 'Welcome to Notes';
+			header("Location: login.php");
 		} else {
 			$message = 'Something went wrong registering. Sorry about that!';
 		}

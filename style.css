@@ -10,11 +10,15 @@ a {
 }
 
 a:link {
-	color:#777;
+	color:hotpink;
+}
+
+a:hover {
+	color:hotpink;
 }
 
 a:visited {
-	color:#777;
+	color:hotpink;
 }
 
 input[type="text"], input[type="password"] {
