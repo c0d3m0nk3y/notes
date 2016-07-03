@@ -37,7 +37,7 @@
 			$tags = $results['tags'];
 			$date = $results['date'];
 
-			echo "<p><b>$title - $date</b></p><p>$note</p><p><i>$tags</i></p>";
+			echo "<p><b>$title</b></p><p>$note</p><p><i>$tags</i></p><p>$date</p>";
 		} else {
 			$message = "Something went wrong getting this note.  Sorry about that!";
 		}
