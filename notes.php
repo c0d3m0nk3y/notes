@@ -33,7 +33,7 @@
 
 	<br /><br />
 
-	<div style="overflow-x:auto;">
+	<div style="overflow-x:auto">
 		<table id="notes">
 			<tr>
 				<th style='width:20%'>Title</th>
@@ -49,7 +49,8 @@
 			    foreach ($db->query($sql) as $row) {
 			    	$id = $row['id'];
 			    	$title = $row['title'];
-			    	$note = $row['note'];
+			    	$note = substr($row['note'], 0, 100);
+			    	$note .= " ...";
 					$tags = $row['tags'];
 					$date = $row['date'];
 
