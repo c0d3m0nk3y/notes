@@ -3,7 +3,7 @@
 	
 	// redirect if not logged in
 	if(!isset($_SESSION['id'])) {
-		header("Location: /");
+		header("Location: index.php");
 	}
 	
 	include_once("db.php");
