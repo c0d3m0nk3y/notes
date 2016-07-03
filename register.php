@@ -4,7 +4,7 @@
 	//		Check valid email
 	//		Validate all required
 	//		check user/email doesn't exist
-	start_session();
+	session_start();
 
 	require 'db.php';
 	
