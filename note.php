@@ -11,11 +11,16 @@
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>- Note -</title>
+	<meta charset="utf-8">
+
+	<title>Note</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+	
+	<!-- Suppress browser request for favicon.ico -->
+    <link rel="shortcut icon" type="image/x-icon" href="data:image/x-icon;,">
 </head>
 
 <body>
