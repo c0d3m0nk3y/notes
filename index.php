@@ -12,6 +12,7 @@
 	<title>- Notes -</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+	<link rel="icon" type="image/png" href="icon.png">
 </head>
 
 <body>
