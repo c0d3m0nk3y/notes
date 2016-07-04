@@ -18,7 +18,7 @@
 	<!--link rel="icon" type="image/png"h ref="icon.png"-->
 	<!-- Suppress browser request for favicon.ico -->
     <link rel="shortcut icon" type="image/x-icon" href="data:image/x-icon;,">
-    <script src="script.js"></script>
+    <script src="favicon.js"></script>
 </head>
 
 <body>
