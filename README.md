@@ -1,1 +1,1 @@
-A notepad written in HTML, JavaScript and PHP.
+A shared notepad written in PHP.
