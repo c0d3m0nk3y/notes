@@ -5,6 +5,8 @@ disable autocomplete `.config/nvim/lua/plugins/init.lua`
   require('cmp').setup { enabled = false }
 }
 ```
+# Bash
+`echo %?`
 
 # Dude
 > "The thing is… (Joe leans into the mic) fat isn't the problem. Carbs and sugar is the problem. Ever eat nuts man? Nuts are good for you."
