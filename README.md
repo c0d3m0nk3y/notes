@@ -1,5 +1,6 @@
 # VBox
 ```
+chmod 666 /dev/sda
 VBoxManage createmedium disk --filename sda.vmdk --format=VMDK --variant RawDisk --property RawDrive=/dev/sda
 ```
 Add it as a drive in the vm properties.
