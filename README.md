@@ -15,6 +15,8 @@ disable autocomplete `.config/nvim/lua/plugins/init.lua`
 # Bash
 `echo %?`
 
+`column -t -s ":" -N USERNAME,PW,UID,GUID,COMMENT,HOME,INTERPRETER -H PW /etc/passwd -J -n passwd`
+
 # Dude
 > "The thing is… (Joe leans into the mic) fat isn't the problem. Carbs and sugar is the problem. Ever eat nuts man? Nuts are good for you."
 
