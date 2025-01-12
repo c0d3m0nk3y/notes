@@ -40,5 +40,5 @@ disable autocomplete `.config/nvim/lua/plugins/init.lua`
 
 
 ```
-Arch on the desktop, sleek and so light, Debian on servers, running just right. Windows let the light shine in through wall, Apple in my tummy, the tastiest of all.
+Arch on the desktop, sleek and so light, Debian on servers, running just right. Windows let the rays shine in through wall, Apple in my tummy, the tastiest of all.
 ```
