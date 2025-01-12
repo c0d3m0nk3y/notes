@@ -37,3 +37,8 @@ disable autocomplete `.config/nvim/lua/plugins/init.lua`
 > Guest: "Yeah, just like that. They grow in the ground like potatoes."
 
 > Joe: "Well… (Breaths heavily into the mic) That makes sense. They couldn't grow on trees because squirrels would fuck them up. Imagine that? Imagine how much squirrels would fuck up a peanut tree. Squirrels are basically tiny chimpanzees."
+
+
+```
+Arch on the desktop, sleek and so light, Debian on servers, running just right. Windows let the light shine in through wall, Apple in my tummy, the tastiest of all.
+```
