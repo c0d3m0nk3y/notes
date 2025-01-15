@@ -1,3 +1,5 @@
+# Python
+`format(int("F",16),'b')`
 # VBox
 ```
 chmod 666 /dev/sda
