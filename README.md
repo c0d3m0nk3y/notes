@@ -1,5 +1,11 @@
+# Pacman
+Find out which package provides a file
+
+`pkgfile somebinary`
+
 # Python
 `format(int("F",16),'b')`
+
 # VBox
 ```
 chmod 666 /dev/sda
@@ -14,8 +20,10 @@ disable autocomplete `.config/nvim/lua/plugins/init.lua`
   require('cmp').setup { enabled = false }
 }
 ```
+
 # Bash
 `column -t -s ":" -N USERNAME,PW,UID,GUID,COMMENT,HOME,INTERPRETER -H PW /etc/passwd -J -n passwd`
+
 # Brave
 Manage search engines > add with url containing %s e.g. `https://searx.be/search?q=%s` > gets promoted > can set as default.
 
