@@ -1,7 +1,7 @@
 # Pacman
-Find out which package provides a file
+Find out which package provides a file `pkgfile somefile`
 
-`pkgfile somebinary`
+List files installed by a package `pacman -Ql package`
 
 # Python
 `format(int("F",16),'b')`
