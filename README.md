@@ -4,10 +4,12 @@ Find out which package provides a file `pkgfile somefile`
 List files installed by a package `pacman -Ql package`
 
 # Python
-`format(int("F",16),'b')`
+```python
+format(int("F",16),'b')
+```
 
 # VBox
-```
+```bash
 chmod 666 /dev/sda
 VBoxManage createmedium disk --filename sda.vmdk --format=VMDK --variant RawDisk --property RawDrive=/dev/sda
 ```
@@ -15,7 +17,7 @@ Add it as a drive in the vm properties.
 
 # NVChad
 disable autocomplete `.config/nvim/lua/plugins/init.lua`
-```
+```lua
 {
   require('cmp').setup { enabled = false }
 }
@@ -54,7 +56,9 @@ return {
 ```
 
 # Bash
-`column -t -s ":" -N USERNAME,PW,UID,GUID,COMMENT,HOME,INTERPRETER -H PW /etc/passwd -J -n passwd`
+```bash
+column -t -s ":" -N USERNAME,PW,UID,GUID,COMMENT,HOME,INTERPRETER -H PW /etc/passwd -J -n passwd
+```
 
 # Brave
 Manage search engines > add with url containing %s e.g. `https://searx.be/search?q=%s` > gets promoted > can set as default.
