@@ -9,3 +9,5 @@
 * Ctrl+W/S    Posture
 * 0 or 4      Weapon holster
 
+# Kate
+* Ctrl+Shift+B  Block Selection (vertical)
