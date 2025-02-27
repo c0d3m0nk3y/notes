@@ -63,6 +63,16 @@ column -t -s ":" -N USERNAME,PW,UID,GUID,COMMENT,HOME,INTERPRETER -H PW /etc/pas
 # Brave
 Manage search engines > add with url containing %s e.g. `https://searx.be/search?q=%s` > gets promoted > can set as default.
 
+# i3
+`xprop` to identify the WM_CLASS
+```
+for_window [class="XTerm"] floating enable
+```
+```
+for_window [instance="Godot_Engine"] floating enable
+for_window [instance="Godot_Editor"] floating disable
+```
+
 # Dude
 > "The thing is… (Joe leans into the mic) fat isn't the problem. Carbs and sugar is the problem. Ever eat nuts man? Nuts are good for you."
 
