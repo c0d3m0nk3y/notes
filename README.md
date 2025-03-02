@@ -1,3 +1,9 @@
+# Git
+Restore specific files to specific commit (~1 one before that)
+```bash
+git checkout c5f567~1 -- file1/to/restore file2/to/restore
+```
+
 # Pacman
 Find out which package provides a file `pkgfile somefile`
 
