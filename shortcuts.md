@@ -1,6 +1,9 @@
 # VSCode
 * fold unfold ALL Ctrl+K Ctrl+0, Ctrl+K Ctrl+J
 * SECTION Ctrl+K Ctrl+[, Ctrl+K Ctrl+]
+* Navigate back Ctrl+Alt+-
+* See references Shift+F12
+* Block selection Alt+Shift+Click/Cursor
 
 # Arma3
 * Cx2         Weapon CQC up
