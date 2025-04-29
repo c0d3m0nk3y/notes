@@ -4,11 +4,13 @@ Restore specific files to specific commit (~1 one before that)
 git checkout c5f567~1 -- file1/to/restore file2/to/restore
 ```
 # Blender
+```
 Object Sculpt Paint         CTRL + TAB
 Add                         Shift + A
 Apply Transforms            CTRL + A
 Wireframe Solid             Z
 Set Parent                  CTRL + P
+```
 
 # Pacman
 Find out which package provides a file `pkgfile somefile`
