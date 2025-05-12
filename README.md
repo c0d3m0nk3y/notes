@@ -29,6 +29,27 @@ VBoxManage createmedium disk --filename sda.vmdk --format=VMDK --variant RawDisk
 ```
 Add it as a drive in the vm properties.
 
+# Windows
+Copying and pasting. Done this so many times I have it committed to memory.
+
+Start the Windows 11 installation process. Follow the prompts until you reach the screen where it says your PC can't run Windows 11.
+
+Press Shift + F10. This key combination opens a Command Prompt window during the installation process.
+
+In the Command Prompt, type regedit and press Enter to open the Registry Editor. Now, navigate to HKEY_LOCAL_MACHINE\SYSTEM\Setup.
+
+Right-click on the Setup key, select New > Key, and name it LabConfig. Inside the LabConfig key, create new DWORD (32-bit) Value entries with the following names and values:
+
+BypassTPMCheck and set its value to 1
+
+BypassSecureBootCheck and set its value to 1
+
+Create BypassCPUCheck and set its value to 1
+
+Close Registry Editor and the Command Prompt, then continue with the installation process. The setup should now bypass Windows 11 system requirements.
+
+Don't forget to use MASSGRAVE to activate windows after installation.
+
 # NVChad
 disable autocomplete `.config/nvim/lua/plugins/init.lua`
 ```lua
