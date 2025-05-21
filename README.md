@@ -10,6 +10,13 @@ Add                         Shift + A
 Apply Transforms            CTRL + A
 Wireframe Solid             Z
 Set Parent                  CTRL + P
+
+Move item base to center
+Edit mode, Select face(s), Shift + S, Cursor to selected, Object mode, Right click, Set origin, Origin to 3d cursor, z=0
+
+Texture & UV
+Shading tab, Add Image texture, UV tab, Edit, Select all, UV > Smart project (OR edge select the outer edges, right click, mark seam, select all, unwrap)
+Shading tab, Add Image texture (normal), Add normal map
 ```
 
 # Pacman
