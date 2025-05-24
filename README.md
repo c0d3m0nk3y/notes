@@ -144,3 +144,47 @@ Arch on the desktop, sleek and so light, Debian on servers, running just right. 
 So for my entire life I continued to bite my nails. At times, when I was particularly stressed they would be little stubs on the end of my fingers. I did make a conscious effort to stop a few times; I bought a bitter nail varnish advertised to assist in the effort, but I got used to it and chomped away.
 In February of 2023 I had what most people would describe as a religious experience. I wouldn't call it that, but it was a very powerful event that shifted my mindset on a fundamental level. A week or so after my mind being blown wide open I realised that I had long nails, dirty long nails that I needed to clean. A new experience.
 Short of the long, pun intended, I just poked myself in the eye. Picking my nose is painful.
+
+
+# 1994
+The Matrix
+
+Fight Club
+
+The Blair Witch Project
+
+Being John Malkovich
+
+American Beauty
+
+Office Space
+
+The Sixth Sense
+
+Magnolia
+
+Boys Don’t Cry
+
+Eyes Wide Shut
+
+Toy Story 2
+
+The Iron Giant
+
+10 Things I Hate About You
+
+Cruel Intentions
+
+The Virgin Suicides
+
+Election
+
+Notting Hill
+
+Galaxy Quest
+
+Sleepy Hollow
+
+The Talented Mr. Ripley
+
+The Spy Who Shagged Me
