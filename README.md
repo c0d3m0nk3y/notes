@@ -1,3 +1,14 @@
+# Middle Mouse Emulation
+```
+cat /etc/X11/xorg.conf.d/50-emulate-middle.conf
+Section "InputClass"
+	Identifier "middle button"
+	MatchIsPointer "on"
+	MatchDriver "libinput"
+	Option "MiddleEmulation" "on"
+EndSection
+```
+
 # Git
 Restore specific files to specific commit (~1 one before that)
 ```bash
