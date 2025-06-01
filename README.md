@@ -11,8 +11,13 @@ EndSection
 
 # PS4 Touchpad Disable
 ```
-xinput list
-xinput set-prop 9 "Device Enabled" 0
+/etc/X11/xorg.conf.d/30ds4.conf
+Section "InputClass"
+    Identifier "ds4-touchpad"
+    Driver "libinput"
+    MatchProduct "Wireless Controller Touchpad"
+    Option "Ignore" "True"
+EndSection
 ```
 
 # Git
