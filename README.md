@@ -9,7 +9,7 @@ Section "InputClass"
 EndSection
 ```
 
-# PS3 Touchpad Disable
+# PS4 Touchpad Disable
 ```
 xinput list
 xinput set-prop 9 "Device Enabled" 0
