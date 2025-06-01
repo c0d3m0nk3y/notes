@@ -1,6 +1,6 @@
 # Middle Mouse Emulation
 ```
-cat /etc/X11/xorg.conf.d/50-emulate-middle.conf
+/etc/X11/xorg.conf.d/50-emulate-middle.conf
 Section "InputClass"
 	Identifier "middle button"
 	MatchIsPointer "on"
@@ -9,11 +9,25 @@ Section "InputClass"
 EndSection
 ```
 
+# PS3 Touchpad Disable
+```
+/etc/X11/xorg.conf.d/51-joystick.conf 
+Section "InputClass"
+        Identifier "joystick catchall"
+        MatchIsJoystick "on"
+        MatchDevicePath "/dev/input/event*"
+        Driver "joystick"
+        Option "StartKeysEnabled" "False"
+        Option "StartMouseEnabled" "False"
+EndSection
+```
+
 # Git
 Restore specific files to specific commit (~1 one before that)
 ```bash
 git checkout c5f567~1 -- file1/to/restore file2/to/restore
 ```
+
 # Blender
 ```
 Object Sculpt Paint         CTRL + TAB
