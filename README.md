@@ -166,11 +166,9 @@ Arch on the desktop, sleek and so light, Debian on servers, running just right. 
 
 Here are the words that men were most likely to recognize over women:
 
-codec (88, 48)
-
-solenoid (87, 54)
-
-golem (89, 56)
+- codec (88, 48)
+- solenoid (87, 54)
+- golem (89, 56)
 
 mach (93, 63)
 
