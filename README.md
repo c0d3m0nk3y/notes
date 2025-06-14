@@ -169,50 +169,30 @@ Here are the words that men were most likely to recognize over women:
 - codec (88, 48)
 - solenoid (87, 54)
 - golem (89, 56)
-
-mach (93, 63)
-
-humvee (88, 58)
-
-claymore (87, 589
-
-scimitar (86, 58)
-
-kevlar (93, 65)
-
-paladin (93, 66)
-
-bolshevism (85, 60)
-
-biped (86, 61)
-
-dreadnought (90, 66)
+- mach (93, 63)
+- humvee (88, 58)
+- claymore (87, 589
+- scimitar (86, 58)
+- kevlar (93, 65)
+- paladin (93, 66)
+- bolshevism (85, 60)
+- biped (86, 61)
+- dreadnought (90, 66)
 
 And here are the words that women were most likely to know over men:
 
-taffeta (48, 87)
-
-tresses (61, 93)
-
-bottlebrush (58, 89)
-
-flouncy (55, 86)
-
-mascarpone (60, 90)
-
-decoupage (56, 86)
-
-progesterone (63, 92)
-
-wisteria (61, 89)
-
-taupe (66, 93)
-
-flouncing (67, 94)
-
-peony (70, 96)
-
-bodice (71, 96)
+- taffeta (48, 87)
+- tresses (61, 93)
+- bottlebrush (58, 89)
+- flouncy (55, 86)
+- mascarpone (60, 90)
+- decoupage (56, 86)
+- progesterone (63, 92)
+- wisteria (61, 89)
+- taupe (66, 93)
+- flouncing (67, 94)
+- peony (70, 96)
+- bodice (71, 96)
 
 
 > When I was 4 years old, or so my mother tells me, I saw another kid biting his nails. As people have a tendency to do, I mimicked the behaviour. My mom would slap my hand away from my mouth and say "stop biting your nails"!
