@@ -1,3 +1,14 @@
+# WSL
+Open powershell as administrator
+
+GET-CimInstance -query "SELECT * from Win32_DiskDrive"
+
+wsl.exe --mount \\.\PHYSICALDRIVEX --bare
+
+wsl
+
+lsblk
+
 # Middle Mouse Emulation
 ```
 /etc/X11/xorg.conf.d/50-emulate-middle.conf
