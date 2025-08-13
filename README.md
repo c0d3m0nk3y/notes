@@ -56,6 +56,8 @@ Shading tab, Add Image texture (normal), Add normal map
 # Pacman
 Find out which package provides a file `pkgfile somefile`
 
+`pkgfile --update`
+
 List files installed by a package `pacman -Ql package`
 
 # Python
