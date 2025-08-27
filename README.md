@@ -91,6 +91,14 @@ Create BypassCPUCheck and set its value to 1
 
 Don't forget to use MASSGRAVE to activate windows after installation.
 
+# Firefox Scrollbar
+
+about:config
+
+widget.non-native-theme.win.scrollbar.use-system-size -> false
+
+widget.non-native-theme.scrollbar.size.override -> 30
+
 # NVChad
 disable autocomplete `.config/nvim/lua/plugins/init.lua`
 ```lua
