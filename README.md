@@ -58,9 +58,9 @@ Find out which package provides a file `pkgfile somefile`
 
 `pkgfile --update`
 
-`build-essential` is `base-devel`
-
 List files installed by a package `pacman -Ql package`
+
+`build-essential` is `base-devel`
 
 # Python
 ```python
