@@ -31,6 +31,9 @@ Section "InputClass"
 EndSection
 ```
 
+# PS4 Not working in ER?
+https://aur.archlinux.org/packages/game-devices-udev
+
 # Git
 Restore specific files to specific commit (~1 one before that)
 ```bash
