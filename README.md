@@ -1,3 +1,6 @@
+# Disable xdg dirs
+`/etc/xdg/user-dirs.conf enabled=False`
+
 # WSL
 Open powershell as administrator
 
