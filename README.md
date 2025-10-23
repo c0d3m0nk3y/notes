@@ -1,6 +1,9 @@
 # Disable xdg dirs
 `/etc/xdg/user-dirs.conf enabled=False`
 
+# Linux
+`git clone --depth 1 https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git`
+
 # WSL
 Open powershell as administrator
 
